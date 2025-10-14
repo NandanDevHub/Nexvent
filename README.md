@@ -60,4 +60,4 @@ It is built with React on the frontend and ASP.NET Core Web API on the backend, 
 
 ## 🛡 License
 
-This project is licensed under the MIT License, see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License, see the [LICENSE](LICENSE.md) file for details.

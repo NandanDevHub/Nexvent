@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="650" viewBox="0 0 850 650">
+  <style>
+    .bg { fill: white; }
+    .title { font: bold 28px sans-serif; fill: #333333; text-anchor: middle; }
+    .box { fill: #c4651a; stroke: #000; stroke-width: 1.5; rx: 8; ry: 8; }
+    .text { fill: white; font: bold 16px sans-serif; text-anchor: middle; }
+    .desc { fill: #000; font: 13px sans-serif; }
+    .arrow { marker-end: url(#arrowhead); stroke: #faa112ff; stroke-width: 3; fill: none; }
+  </style>
+
+  <defs>
+    <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9bb51ff"/>
+      <stop offset="1" stop-color="#3ab1d2ff"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <polygon points="0 0, 5 3.5, 0 7" fill="#37473fff" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="800" height="600" />
+
+    <!-- Outer Border -->
+  <rect x="10" y="10" width="780" height="580" rx="25" ry="25"
+        fill="none" stroke="black" stroke-width="3" />
+
+  <!-- Nexvent emblem -->
+  <g transform="translate(1,1)">
+    <!-- emblem base -->
+    <circle cx="90" cy="90" r="50" fill="url(#logoGradient)"/>
+    <!-- calendar body -->
+    <rect x="63" y="68" width="54" height="42" rx="8" ry="8" fill="#e9bb51ff"/>
+    <!-- calendar header -->
+    <rect x="63" y="68" width="54" height="12" rx="6" ry="6" fill="#dd1d43e7"/>
+    <!-- binding rings -->
+    <circle cx="75" cy="74" r="3" fill="black"/>
+    <circle cx="105" cy="74" r="3" fill="black"/>
+    <!-- check mark -->
+    <path d="M75 95 L82 101 L104 89" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- chat bubble -->
+    <g transform="translate(120,90)">
+      <rect x="0" y="0" width="28" height="20" rx="6" ry="6" fill="#373a31e7"/>
+      <path d="M9 20 L12 26 L16 20 Z" fill="black"/>
+      <circle cx="6" cy="10" r="3" fill="#5af6f3ff"/>
+      <circle cx="15" cy="10" r="3" fill="#f344bcff"/>
+      <circle cx="23" cy="10" r="3" fill="#f7f065ff"/>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text class="title" x="310" y="100">Nexvent Architecture</text>
+
+  <!-- API Box -->
+  <rect class="box" x="325" y="240" width="200" height="60"/>
+  <text class="text" x="425" y="278">API</text>
+  <text class="desc" x="50" y="270">I receive HTTP requests and respond to them.</text>
+
+  <!-- Application Box -->
+  <rect class="box" x="325" y="350" width="200" height="60"/>
+  <text class="text" x="425" y="388">Application</text>
+  <text class="desc" x="540" y="380">I process business logic</text>
+
+  <!-- Domain Box -->
+  <rect class="box" x="325" y="460" width="200" height="60"/>
+  <text class="text" x="425" y="498">Domain</text>
+  <text class="desc" x="540" y="490">I contain the business entities</text>
+  <text class="desc" x="540" y="505">I am at the centre of everything.</text>
+  <!-- Persistence Box -->
+  <rect class="box" x="50" y="460" width="200" height="60"/>
+  <text class="text" x="150" y="495">Persistence</text>
+  <text class="desc" x="50" y="550">I provide the connection to the database</text>
+  <text class="desc" x="50" y="565">and translate the code into SQL queries.</text>
+
+  <!-- Arrows -->
+  <line class="arrow" x1="425" y1="300" x2="425" y2="350"/>
+  <line class="arrow" x1="425" y1="410" x2="425" y2="460"/>
+  <line class="arrow" x1="325" y1="380" x2="250" y2="460"/>
+  <line class="arrow" x1="325" y1="490" x2="250" y2="490"/>
+</svg>

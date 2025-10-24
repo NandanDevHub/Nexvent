@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+  <defs>
+    <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9bb51ff"/>
+      <stop offset="1" stop-color="#3ab1d2ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Circle -->
+  <circle cx="110" cy="110" r="90" fill="url(#logoGradient)" />
+
+  <!-- Calendar Body -->
+  <rect x="83" y="88" width="54" height="42" rx="8" ry="8" fill="#e9bb51ff" />
+  <!-- Calendar Header -->
+  <rect x="83" y="88" width="54" height="12" rx="6" ry="6" fill="#dd1d43e7" />
+  <!-- Binding Rings -->
+  <circle cx="95" cy="94" r="3" fill="black" />
+  <circle cx="125" cy="94" r="3" fill="black" />
+
+  <!-- Checkmark -->
+  <path d="M95 115 L103 121 L125 109"
+        fill="none" stroke="black" stroke-width="5"
+        stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Chat Bubble -->
+  <g transform="translate(145,120)">
+    <rect x="0" y="0" width="35" height="20" rx="6" ry="6" fill="#373a31e7" />
+    <path d="M12 20 L12 26 L20 20 Z" fill="black" />
+    <circle cx="6" cy="10" r="3" fill="#5af6f3ff" />
+    <circle cx="16" cy="10" r="3" fill="#f344bcff" />
+    <circle cx="26" cy="10" r="3" fill="#f7f065ff" />
+  </g>
+</svg>

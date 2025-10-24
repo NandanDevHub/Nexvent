@@ -1,4 +1,7 @@
-# Nexvent
+<p align="center">
+  <img src="assets/nexvent_logo.svg" width="80" alt="Nexvent Logo" style="vertical-align:middle;margin-right:8px;">
+  <span style="font-size:34px;font-weight:700;vertical-align:middle;">Nexvent</span>
+</p>
 
 Nexvent is a full stack event management platform that allows users to create, join, and chat around real world activities in real time.  
 It is built with React on the frontend and ASP.NET Core Web API on the backend, following clean architecture and production grade patterns.

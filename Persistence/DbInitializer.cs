@@ -3,7 +3,7 @@ using Domain;
 
 namespace Persistence;
 
-public class DbInitalizer
+public class DbInitializer
 {
     public static async Task SeedData(AppDbContext context)
     {
